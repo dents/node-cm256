@@ -3,6 +3,8 @@
         "target_name": "cm256",
         "cflags!": [ "-fno-exceptions" ],
         "cflags_cc!": [ "-fno-exceptions" ],
+        "cflags": [ "-msse4.1" ],
+        "cflags_cc": [ "-msse4.1" ],
         "sources": [
 			"cppsrc/cm256.h",
 			"cppsrc/cm256.cpp",

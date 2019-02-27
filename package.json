@@ -1,14 +1,18 @@
 {
-  "name": "test-addon",
+  "name": "cm256",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple node wrapper around catid's cm256",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
     "build": "node-gyp rebuild",
     "clean": "node-gyp clean"
   },
-  "author": "",
+  "author": "Denis Petrusenko",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dents/node-cm256.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "node-gyp": "^3.8.0"
