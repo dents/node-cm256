@@ -1,6 +1,8 @@
 # node-cm256
 Simple node wrapper around [cm256](https://github.com/catid/cm256)
 
+**NB:** This project will only work on CPUs that support SSE 4.1
+
 Example usage:
 
     const cm256 = require('cm256');
