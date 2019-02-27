@@ -3,7 +3,7 @@ Simple node wrapper around [cm256](https://github.com/catid/cm256)
 
 Example usage:
 
-    const cm256 = require('./build/Release/cm256.node');
+    const cm256 = require('cm256');
 
     const BLOCK_SIZE = 5;
     const ORIGINAL_BLOCK_COUNT = 2;
