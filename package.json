@@ -9,7 +9,6 @@
   "dependencies": {
     "node-addon-api": "^1.6.2"
   },
-  "deprecated": false,
   "description": "Simple node wrapper around catid's cm256",
   "devDependencies": {
     "node-gyp": "^3.8.0"
@@ -28,5 +27,5 @@
     "clean": "node-gyp clean",
     "install": "node-gyp rebuild"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
