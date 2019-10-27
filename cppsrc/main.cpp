@@ -87,16 +87,16 @@ Napi::Boolean cm256::CalculateRecoveryBlocksWrapped(const Napi::CallbackInfo &in
 
   const uint32_t blockBytes = blockBytesParam.Uint32Value();
 
-  if (originalCountParam.Uint32Value() > 0xFF)
+  if (originalCountParam.Uint32Value() >= 256)
   {
-    Napi::Error::New(env, "originalCount must be < 255").ThrowAsJavaScriptException();
+    Napi::Error::New(env, "originalCount must be < 256").ThrowAsJavaScriptException();
     return Napi::Boolean::New(env, false);
   }
   const uint8_t originalCount = (uint8_t)originalCountParam.Uint32Value();
 
-  if ((uint8_t)recoveryCountParam.Uint32Value() > 0xFF - originalCount)
+  if ((uint8_t)recoveryCountParam.Uint32Value() > 256 - originalCount)
   {
-    Napi::Error::New(env, "recoveryCount must be < 255-originalCount").ThrowAsJavaScriptException();
+    Napi::Error::New(env, "recoveryCount must be < 256-originalCount").ThrowAsJavaScriptException();
     return Napi::Boolean::New(env, false);
   }
   const uint8_t recoveryCount = (uint8_t)recoveryCountParam.Uint32Value();

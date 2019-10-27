@@ -1,23 +1,32 @@
 {
-  "name": "cm256",
-  "version": "1.0.0",
-  "description": "Simple node wrapper around catid's cm256",
-  "main": "index.js",
-  "gypfile": true,
-  "scripts": {
-    "build": "node-gyp rebuild",
-    "clean": "node-gyp clean"
+  "author": {
+    "name": "Denis Petrusenko"
   },
-  "author": "Denis Petrusenko",
+  "bugs": {
+    "url": "https://github.com/dents/node-cm256/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-addon-api": "^1.6.2"
+  },
+  "deprecated": false,
+  "description": "Simple node wrapper around catid's cm256",
+  "devDependencies": {
+    "node-gyp": "^3.8.0"
+  },
+  "gypfile": true,
+  "homepage": "https://github.com/dents/node-cm256#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cm256",
   "repository": {
     "type": "git",
     "url": "git://github.com/dents/node-cm256.git"
   },
-  "license": "ISC",
-  "devDependencies": {
-    "node-gyp": "^3.8.0"
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "install": "node-gyp rebuild"
   },
-  "dependencies": {
-    "node-addon-api": "^1.6.2"
-  }
+  "version": "1.0.1"
 }
